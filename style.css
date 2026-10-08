@@ -267,6 +267,7 @@ nav>ul>li:hover>a {
 
 #contact {
     width: 100%;
+    height: auto;
     border-bottom: 5px solid #333;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
@@ -330,15 +331,59 @@ nav>ul>li:hover>a {
 
 .contact_input_textarea {
     width: 100%;
-    position: relative;
+    /* position: relative; 제거 */
+    display: flex;
+    flex-direction: column;
+    /* 세로로 정렬 */
+    align-items: center;
+    /* 가로 기준 가운데 정렬 */
+    gap: 10px;
+    /* 라벨과 textarea 사이의 간격 */
+    margin-top: 20px;
+    /* 위쪽 요소와의 간격 */
+    margin-bottom: 20px;
+    /* 아래쪽 버튼과의 간격 */
 }
 
 .contact_input_textarea>label {
-    position: absolute;
-    top: 0px;
-    left: 50%;
-    transform: translateX(-50%);
+    /* position, top, left, transform 모두 제거 */
+    font-weight: bold;
 }
+
+.contact_input_textarea>textarea {
+    /* position, top, left, transform 모두 제거 */
+    border: 2.5px solid #333;
+    border-radius: 5px;
+    max-width: 90%;
+    /* 화면 밖으로 삐져나가지 않도록 방지 */
+    /* resize: vertical; */
+    /* 사용자가 위아래(높이)로만 조절할 수 있도록 제한 (권장) */
+}
+
+.contact_submit_buttons {
+    width: 350px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_submit_buttons>button,
+.contact_submit_buttons>input {
+    width: 150px;
+    height: 50px;
+    border: 5px solid #333;
+    background-color: #fcfcfc;
+    border-radius: 12px;
+    font-weight: 700;
+}
+
+.contact_submit_buttons>button:hover,
+.contact_submit_buttons>input:hover {
+    color: #fcfcfc;
+    background-color: #333;
+}
+
 
 /*#####*/
 /*width: min(1000px, calc(100% - 50px)) -> 더 적은거를 선택해 주세요*/
