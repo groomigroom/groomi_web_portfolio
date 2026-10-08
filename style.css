@@ -311,8 +311,20 @@ nav>ul>li:hover>a {
     transform: translateX(-50%);
 }
 
-#contact>form>table td {
-    height: 40px;
+#contact>form {
+    width: 100%;
+}
+
+.contact_input_text {
+    width: 270px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact_input_text>input {
+    height: 20px;
+    border: 2.5px solid #333;
 }
 
 /*#####*/
