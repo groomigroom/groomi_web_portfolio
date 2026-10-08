@@ -320,11 +320,24 @@ nav>ul>li:hover>a {
     height: 30px;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
 }
 
 .contact_input_text>input {
     height: 20px;
     border: 2.5px solid #333;
+}
+
+.contact_input_textarea {
+    width: 100%;
+    position: relative;
+}
+
+.contact_input_textarea>label {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /*#####*/
