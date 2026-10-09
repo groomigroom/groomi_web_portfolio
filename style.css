@@ -387,10 +387,15 @@ nav>ul>li:hover>a {
 footer {
     width: 100%;
     height: 100px;
-    boder-top-left-radius: 25px;
-    boder-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
     border: 5px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
 
 
 /*#####*/
