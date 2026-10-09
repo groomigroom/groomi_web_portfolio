@@ -396,6 +396,7 @@ footer {
 }
 
 footer>section>a {
+    display: block;
     margin: 0 auto;
 }
 
